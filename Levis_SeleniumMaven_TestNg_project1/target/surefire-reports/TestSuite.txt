@@ -1,0 +1,28 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 15.351 sec <<< FAILURE! - in TestSuite
+loginTest(tests.LoginLogoutTest)  Time elapsed: 7.221 sec  <<< FAILURE!
+org.openqa.selenium.remote.UnreachableBrowserException: 
+Error communicating with the remote browser. It may have died.
+Build info: version: '2.42.0', revision: '5e824302019c86eae9c8c3ca9155e7307b410cf8', time: '2014-05-24 09:48:41'
+System info: host: 'Pradip-PC', ip: '14.96.41.32', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.7.0_67'
+Driver info: driver.version: RemoteWebDriver
+	at tests.LoginLogoutTest.loginTest(LoginLogoutTest.java:23)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:7055 [/127.0.0.1] failed: Connection refused: connect
+	at tests.LoginLogoutTest.loginTest(LoginLogoutTest.java:23)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at tests.LoginLogoutTest.loginTest(LoginLogoutTest.java:23)
+
+afterTest(tests.LoginLogoutTest)  Time elapsed: 1.126 sec  <<< FAILURE!
+org.openqa.selenium.remote.UnreachableBrowserException: 
+Error communicating with the remote browser. It may have died.
+Build info: version: '2.42.0', revision: '5e824302019c86eae9c8c3ca9155e7307b410cf8', time: '2014-05-24 09:48:41'
+System info: host: 'Pradip-PC', ip: '14.96.41.32', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.7.0_67'
+Driver info: driver.version: EventFiringWebDriver
+	at tests.LoginLogoutTest.afterTest(LoginLogoutTest.java:40)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:7055 [/127.0.0.1] failed: Connection refused: connect
+	at tests.LoginLogoutTest.afterTest(LoginLogoutTest.java:40)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at tests.LoginLogoutTest.afterTest(LoginLogoutTest.java:40)
+
